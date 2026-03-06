@@ -49,7 +49,7 @@ export function ChallengeSection() {
             <img
               src={imageB}
               alt="Waiting time illustration"
-              className="w-40 h-40 object-cover rounded-xl mb-6 shadow-md"
+              className="w-48 md:w-56 h-48 md:h-56 object-cover rounded-xl mb-6 shadow-md"
             />
             <h3 className="text-xl font-heading font-bold text-dark mb-3">
               Long Waiting Times
@@ -68,7 +68,7 @@ export function ChallengeSection() {
             <img
               src={imageC}
               alt="Parent uncertainty illustration"
-              className="w-40 h-40 object-cover rounded-xl mb-6 shadow-md"
+              className="w-48 md:w-56 h-48 md:h-56 object-cover rounded-xl mb-6 shadow-md"
             />
             <h3 className="text-xl font-heading font-bold text-dark mb-3">
               Uncertainty at Home
@@ -84,7 +84,7 @@ export function ChallengeSection() {
             <img
               src={imageD}
               alt="Speech practice tools illustration"
-              className="w-40 h-40 object-cover rounded-xl mb-6 shadow-md"
+              className="w-48 md:w-56 h-48 md:h-56 object-cover rounded-xl mb-6 shadow-md"
             />
             <h3 className="text-xl font-heading font-bold text-dark mb-3">
               Limited Daily Tools

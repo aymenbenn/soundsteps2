@@ -1,57 +1,39 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ImageIcon } from 'lucide-react';
+import familyImage from '../assets/family.png'; // <- import your image
+
 export function FounderStorySection() {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
           {/* Illustration Side */}
           <motion.div
-            initial={{
-              opacity: 0,
-              x: -30
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0
-            }}
-            viewport={{
-              once: true
-            }}
-            transition={{
-              duration: 0.8
-            }}
-            className="lg:col-span-5 flex justify-center lg:justify-end">
-
-            {/* ILLUSTRATION PLACEHOLDER */}
-            <div className="w-full max-w-sm aspect-[3/4] rounded-2xl border-2 border-dashed border-primary/20 bg-primary/5 flex flex-col items-center justify-center gap-4 p-8 text-center">
-              <ImageIcon className="text-primary/40" size={48} />
-              <p className="text-primary/60 text-sm font-medium max-w-[200px]">
-                Founder story illustration — Family journey
-              </p>
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="lg:col-span-5 flex justify-center lg:justify-end"
+          >
+            {/* FAMILY IMAGE */}
+            <div className="w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-md">
+              <img
+                src={familyImage}
+                alt="Founder story - Family journey"
+                className="w-full h-full object-cover"
+              />
             </div>
           </motion.div>
 
           {/* Text Side */}
           <motion.div
-            initial={{
-              opacity: 0,
-              y: 30
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0
-            }}
-            viewport={{
-              once: true
-            }}
-            transition={{
-              duration: 0.8,
-              delay: 0.2
-            }}
-            className="lg:col-span-7">
-
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="lg:col-span-7"
+          >
             <div className="border-l-4 border-primary/20 pl-6 md:pl-10">
               <h2 className="text-3xl font-heading font-bold text-dark mb-8">
                 Why We're Building SoundSteps
@@ -88,6 +70,6 @@ export function FounderStorySection() {
           </motion.div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }
