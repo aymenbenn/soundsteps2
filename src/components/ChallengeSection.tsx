@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import imageB from '../assets/b.png';
-import imageC from '../assets/c.png';
-import imageD from '../assets/d.png';
+import imageB from '../assets/b1.png';
+import imageC from '../assets/b2.png';
+import imageD from '../assets/b3.png';
 
 export function ChallengeSection() {
   const containerVariants = {
