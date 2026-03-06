@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import imageE from '../assets/e.JPG';
-import imageF from '../assets/f.JPG';
-import imageG from '../assets/g.JPG';
+import imageE from '../assets/e.png';
+import imageF from '../assets/f.png';
+import imageG from '../assets/g.png';
 
 export function SolutionSection() {
   const containerVariants = {
